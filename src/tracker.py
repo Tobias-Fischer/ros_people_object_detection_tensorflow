@@ -141,7 +141,7 @@ class PeopleObjectTrackerNode(object):
 
 
         else:
-            print "No tracked objects!"
+            print("No tracked objects!")
 
         self.pub_trackers.publish(detections)
 

@@ -14,7 +14,7 @@
 # ==============================================================================
 """Class for evaluating object detections with COCO metrics."""
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.core import standard_fields
 from object_detection.metrics import coco_tools

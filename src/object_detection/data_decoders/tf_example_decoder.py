@@ -18,7 +18,7 @@
 A decoder to decode string tensors containing serialized tensorflow.Example
 protos for object detection.
 """
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from tensorflow.python.ops import array_ops
 from tensorflow.python.ops import control_flow_ops

@@ -18,7 +18,7 @@
 import numpy as np
 import six
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.core import preprocessor
 from object_detection.core import preprocessor_cache

@@ -20,7 +20,7 @@ models.
 from abc import abstractmethod
 
 import re
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.core import box_list
 from object_detection.core import box_list_ops

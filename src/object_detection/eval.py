@@ -45,7 +45,7 @@ Example usage:
 """
 import functools
 import os
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection import evaluator
 from object_detection.builders import dataset_builder

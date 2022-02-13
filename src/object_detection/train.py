@@ -44,7 +44,7 @@ Example usage:
 import functools
 import json
 import os
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection import trainer
 from object_detection.builders import dataset_builder

@@ -19,7 +19,7 @@ import os
 
 import numpy as np
 import PIL.Image
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection import create_pascal_tf_record
 

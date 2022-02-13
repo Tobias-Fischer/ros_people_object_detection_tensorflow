@@ -16,7 +16,7 @@
 """Tests for object_detection.utils.dataset_util."""
 
 import os
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.protos import input_reader_pb2
 from object_detection.utils import dataset_util

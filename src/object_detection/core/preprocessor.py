@@ -66,7 +66,7 @@ back to rank 4.
 import functools
 import inspect
 import sys
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from tensorflow.python.ops import control_flow_ops
 

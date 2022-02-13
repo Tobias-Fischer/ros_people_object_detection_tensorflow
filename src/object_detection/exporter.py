@@ -17,7 +17,7 @@
 import logging
 import os
 import tempfile
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from google.protobuf import text_format
 from tensorflow.core.protobuf import saver_pb2
 from tensorflow.python import pywrap_tensorflow

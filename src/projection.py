@@ -67,6 +67,8 @@ class ProjectionNode(object):
         self.cx = cx
         self.cy = cy
 
+        self.depth_multiplier = 1
+
         # spin
         rospy.spin()
 
@@ -108,16 +110,16 @@ class ProjectionNode(object):
                     depth_mean = np.nanmedian(\
                        cv_depth_bounding_box[np.nonzero(cv_depth_bounding_box)])
 
-                    real_x = (x + width/2-self.cx)*(depth_mean*0.001)/self.f
+                    real_x = (x + width/2-self.cx)*(depth_mean*self.depth_multiplier)/self.f
 
-                    real_y = (y + height/2-self.cy)*(depth_mean*0.001)/self.f
+                    real_y = (y + height/2-self.cy)*(depth_mean*self.depth_multiplier)/self.f
 
                     msg.detections[i].pose.pose.position.x = real_x
                     msg.detections[i].pose.pose.position.y = real_y
-                    msg.detections[i].pose.pose.position.z = depth_mean*0.001
+                    msg.detections[i].pose.pose.position.z = depth_mean*self.depth_multiplier
 
                 except Exception as e:
-                    print e
+                    print(e)
 
         self.pub.publish(msg)
 

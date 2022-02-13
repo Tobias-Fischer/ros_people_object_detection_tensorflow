@@ -25,7 +25,7 @@ from __future__ import print_function
 import functools
 import os
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from tensorflow.contrib.tpu.python.tpu import tpu_config
 from tensorflow.contrib.tpu.python.tpu import tpu_estimator

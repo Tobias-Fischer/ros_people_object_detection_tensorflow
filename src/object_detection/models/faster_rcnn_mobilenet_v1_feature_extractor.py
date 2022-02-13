@@ -14,7 +14,7 @@
 # ==============================================================================
 
 """Mobilenet v1 Faster R-CNN implementation."""
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.meta_architectures import faster_rcnn_meta_arch
 from nets import mobilenet_v1

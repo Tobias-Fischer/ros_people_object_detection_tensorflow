@@ -17,7 +17,7 @@
 
 import os
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from tensorflow.core.example import example_pb2
 from tensorflow.core.example import feature_pb2

@@ -22,7 +22,7 @@ Detection configuration framework, they should define their own builder function
 that wraps the build function.
 """
 import functools
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.core import standard_fields as fields
 from object_detection.data_decoders import tf_example_decoder

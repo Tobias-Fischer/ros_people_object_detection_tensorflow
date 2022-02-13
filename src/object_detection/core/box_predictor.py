@@ -28,7 +28,7 @@ few box predictor architectures are shared across many models.
 """
 from abc import abstractmethod
 import math
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from object_detection.utils import ops
 from object_detection.utils import shape_utils
 from object_detection.utils import static_shape

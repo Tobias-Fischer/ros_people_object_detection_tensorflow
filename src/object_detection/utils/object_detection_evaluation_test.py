@@ -16,7 +16,7 @@
 """Tests for object_detection.utils.object_detection_evaluation."""
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.core import standard_fields
 from object_detection.utils import object_detection_evaluation

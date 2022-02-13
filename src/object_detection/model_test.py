@@ -22,7 +22,7 @@ import functools
 import os
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection import inputs
 from object_detection import model

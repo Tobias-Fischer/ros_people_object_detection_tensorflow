@@ -18,7 +18,7 @@ from __future__ import absolute_import
 
 import os
 import tempfile
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 
 from object_detection import model

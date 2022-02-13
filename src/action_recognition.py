@@ -25,7 +25,7 @@ import rospkg
 
 from six.moves import urllib
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 import tensorflow_hub as hub
 

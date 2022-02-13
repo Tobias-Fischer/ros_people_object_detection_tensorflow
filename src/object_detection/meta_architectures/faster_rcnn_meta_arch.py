@@ -95,7 +95,7 @@ configured in the meta architecture:
 """
 from abc import abstractmethod
 from functools import partial
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.anchor_generators import grid_anchor_generator
 from object_detection.core import balanced_positive_negative_sampler as sampler

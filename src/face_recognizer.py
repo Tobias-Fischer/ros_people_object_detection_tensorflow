@@ -219,7 +219,7 @@ class FaceRecognitionNode(object):
 
 
                 except Exception as e:
-                    print e
+                    print(e)
 
         return (image, detections_out)
 

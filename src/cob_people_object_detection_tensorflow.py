@@ -85,7 +85,7 @@ class PeopleObjectDetectionNode(object):
         cap.release()
         cv2.destroyAllWindows()
 
-        print "Video has been processed!"
+        print("Video has been processed!")
 
         self.shutdown()
 

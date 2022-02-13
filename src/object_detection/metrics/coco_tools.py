@@ -48,7 +48,7 @@ from pycocotools import coco
 from pycocotools import cocoeval
 from pycocotools import mask
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.utils import json_utils
 

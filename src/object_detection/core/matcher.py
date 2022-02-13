@@ -34,7 +34,7 @@ to query the results.
 from abc import ABCMeta
 from abc import abstractmethod
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from object_detection.utils import ops
 
